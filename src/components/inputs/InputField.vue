@@ -1,9 +1,10 @@
 <template>
     <div>
-        <div class="field" :class="{error: !!errorMessage}">
+        <div @click="inputRef.focus()" class="field" :class="{error: !!errorMessage}">
             <RawIcon class="icon" :name="isPassword ? 'password' : 'email'" color="#818E9C"/>
             <input
                 v-model="model"
+                ref="inputRef"
                 class="input-el" 
                 :type="isPassword && hidePassword ? 'password' : 'text'"
                 :placeholder="isPassword ? 'At least 8 characters' : 'you@example.com'"
@@ -35,8 +36,8 @@ withDefaults(defineProps<Props>(), {
 })
 
 const model = defineModel()
-
 const hidePassword = ref(true)
+const inputRef = ref()
 </script>
 
 <style scoped>
