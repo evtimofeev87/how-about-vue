@@ -1,10 +1,11 @@
 <script setup lang="ts"> 
-import RawIcon from './components/RawIcon.vue' 
+import AuthPage from './pages/AuthPage.vue';
 
 </script>
 
 <template>
-  <div>
+  <AuthPage/>
+  <!-- <div>
     <div class="icons">
       <h2>Example Icons</h2> 
       
@@ -26,10 +27,13 @@ import RawIcon from './components/RawIcon.vue'
         <img src="./assets/social-google.svg" alt="" class="icon password" />
       </div>
     </div>
-  </div> 
+  </div>  -->
 </template>
 
 <style scoped>
+
+
+
 .input__box {
   display: flex;
   align-items: center;
