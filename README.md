@@ -1,3 +1,9 @@
+# Данный для успешной авторизации
+
+login: test@gmail.com
+
+password: testtest
+
 # Техническое задание: Форма Входа
 
 <img src="./wiki/ui_example.png" alt="UI Example" width="480"/>
